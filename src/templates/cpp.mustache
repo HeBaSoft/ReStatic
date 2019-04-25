@@ -2,8 +2,7 @@
 #include "Pages.h"
 
 {{#pages}}
-String Pages::render{{name}}({{variables}}) {
+String render{{name}}({{variables}}) {
     return {{{content}}};
 }
-
 {{/pages}}

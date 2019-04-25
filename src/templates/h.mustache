@@ -1,10 +1,5 @@
+#include <Arduino.h>
 
-
-class Pages {
-    public: 
-    {{#pages}}
-        static String render{{name}}({{variables}});
-    {{/pages}}
-        
-};
-
+{{#pages}}
+String render{{name}}({{variables}});
+{{/pages}}
